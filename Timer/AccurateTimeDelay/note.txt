@@ -1,0 +1,5 @@
+Proteus 8.6 does not have any effect on timer while changing the F_CPU value
+
+test it with F_CPU 1MHz or 16MHz, answer would be same.
+
+So this is why I will be working only with 1Hz f_cpu
