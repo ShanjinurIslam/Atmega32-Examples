@@ -1,0 +1,1 @@
+first generate hex file from the c file then run it on proteus
