@@ -18,14 +18,14 @@ void ADC_init(){
 ISR(ADC_vect){
 	int a = ADCL ;
 	int b = ADCH ;
-	result = ((b<<2) | a) ;
+	result = ((b<<2) | (a>>6)) ;
 }
 
 int main(void)
 {
 	ADC_init() ;
 	float step = 5.0/1024 ;
-	ADCSRA |= (1<<ADSC) ;
+	ADCSRA |= (1<<ADSC) ; 
 	sei() ;
 
 	//get_voltage
